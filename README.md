@@ -1,3 +1,13 @@
-# Face-ani-spoofing
-This is implement for detect fake face from real face
-And this project is going on with Me and [Erfan Maleki](url)
+# Face-anti-spoofing
+speaking about face anti spoofing and what we done
+
+## origin datasets 
+
+## load model
+
+## other files
+
+## result of models on origin dataset
+
+## references
+

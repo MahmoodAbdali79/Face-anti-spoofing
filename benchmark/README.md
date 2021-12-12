@@ -50,7 +50,9 @@ After predict models on each types of extracted frames, we found out that our mo
 
   an other reason refers to resolution of benchmark that divided to high resolution and low resolution. Also cameras were used in benchmark is different from train dataset cameras.
 
-  and every difference  between these dataset could be effective that you can find them in detail :  [CASIA FASD](https://ieeexplore.ieee.org/document/6199754),  [OULU-NPU](https://sites.google.com/site/oulunpudatabase/) . 
+  and every difference  between these dataset could be effective that you can find them in detail : 
+  > main dataset : [OULU-NPU](https://sites.google.com/site/oulunpudatabase/)
+  > benchmark : [CASIA FASD](https://ieeexplore.ieee.org/document/6199754)
 
 ## how can improve model
 

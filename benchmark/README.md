@@ -59,6 +59,6 @@ After predict models on each types of extracted frames, we found out that our mo
 
 > The cure for pain is in the pain.  **Rumi**
 
-actually, because the benchmark dataset has more variety than train dataset, it's good idea to train  benchmark as train dataset. or every way that complain the train dataset in variety.
+Actually, because the benchmark dataset has more variety than train dataset, it's good idea to train  benchmark as train dataset. Or every way that complain the train dataset in variety.
 
 As mentioned above about camera, using same camera for both train dataset and benchmark could be helpful. And  also using newer `RPPG` and better face detection model could be helpful for having better result. 

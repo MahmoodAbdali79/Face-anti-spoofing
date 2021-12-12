@@ -1,10 +1,10 @@
 # Face-anti-spoofing
 
-Face anti spoofing is a challenge in computer vision task that helps to find out if a film is real  or fake. in other word we're finding liveness in films that captured from humans. For this task, lots of models have been provided and we selected [one](https://github.com/emadeldeen24/face-anti-spoofing) of them to retrain on dataset and getting better result.
+Face anti spoofing is a challenging task in computer vision. It is the task of preventing false facial verification by using a photo, video, mask or a different substitute for an authorized person's face. in other word we're finding liveness in films that captured from humans. For this task, lots of models have been provided and we selected [one](https://github.com/emadeldeen24/face-anti-spoofing) of them to retrain on dataset and getting better result.
 
 ## origin datasets
 
-We use OULU-NPU as our train dataset to reach better result .This dataset involves tow type of attack presentation ( `print-attack` and `reply-attack`)  and real film in some series and two different background. you can see more detail about this [here](https://sites.google.com/site/oulunpudatabase/).
+We use OULU-NPU as our training dataset to reach a better result .This dataset contains two types of attack presentation ( `print-attack` and `reply-attack`)  and real film in some series with two different backgrounds. more details about this dataset -> [here](https://sites.google.com/site/oulunpudatabase/).
 
 ## functions
 
@@ -36,7 +36,7 @@ We use OULU-NPU as our train dataset to reach better result .This dataset involv
 
 ## load model
 
-For loading models and their weight, we use the following code. So here can see code of loading model, load weight and compile them.
+For loading models and their weights, we use the following code. following script is used for loading the model, loading weights and compiling the model.
 
 ```python
 # load model
@@ -50,9 +50,9 @@ model.load_weights("../RGB_rPPG_merge_softmax_.h5")
 model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])
 ```
 
-## result of models on origin dataset
+## result of models on the origin dataset
 
-As you can see in below, the results show that our model is good on data test data.
+As you can see below, the results show that our models accuracy has been improved on the test data.
 
 |          Model          | HTER  |
 | :---------------------: | :---: |

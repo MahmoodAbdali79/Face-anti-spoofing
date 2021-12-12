@@ -40,6 +40,22 @@ model = model_from_json(loaded_model_json)
 model.load_weights("../RGB_rPPG_merge_softmax_.h5")
 model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])
 ```
-- ## result of models on benchmark
-- ## why this happened?
-- ## how can improve model
+## result of models on origin dataset
+
+After predict models on each types of extracted frames, we found out that our model isn't very good on this benchmark. actually it's as worse as first model on benchmark and we found some reason for this    
+
+- ### why this happened?
+
+  The main reason refers to differences between these tow dataset. benchmark involves an other type attack (eye blink attack) that is not in the train dataset.
+
+  an other reason refers to resolution of benchmark that divided to high resolution and low resolution. Also cameras were used in benchmark is different from train dataset cameras.
+
+  and every difference  between these dataset could be effective that you can find them in detail :  [CASIA FASD](https://ieeexplore.ieee.org/document/6199754),  [OULU-NPU](https://sites.google.com/site/oulunpudatabase/) . 
+
+## how can improve model
+
+> The cure for pain is in the pain.  **Rumi**
+
+actually, because the benchmark dataset has more variety than train dataset, it's good idea to train  benchmark as train dataset. or every way that complain the train dataset in variety.
+
+As mentioned above about camera, using same camera for both train dataset and benchmark could be helpful. And  also using newer `RPPG` and better face detection model could be helpful for having better result. 
